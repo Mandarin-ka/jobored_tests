@@ -1,7 +1,10 @@
 import React from 'react';
+import { useState } from 'react';
 import './Header.css'
 
 const Header = () => {
+  const [isMain, setIsMain] = useState(true);
+
   return (
   <header id='header' className="header">
     <div className="logo">
@@ -9,8 +12,8 @@ const Header = () => {
     </div>
     <nav className='header__nav'>
       <ul className='nav__ul'>
-        <li className='nav__item'><a href="#header" className='nav__item_a active'>Поиск Вакансий</a></li>
-        <li className='nav__item'><a href="#header" className='nav__item_a'>Избранное</a></li>
+        <li className='nav__item'><a href="#header" className={isMain ? 'nav__item_a active' : 'nav__item_a'}>Поиск Вакансий</a></li>
+        <li className='nav__item'><a href="#header" className={!isMain ? 'nav__item_a active' : 'nav__item_a'}>Избранное</a></li>
       </ul>
     </nav>
   </header>

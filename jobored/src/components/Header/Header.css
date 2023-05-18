@@ -3,8 +3,14 @@
 
 .header{
   display: flex;
-  padding: 24px 162px;
+  height: 84px;
+  padding: 0 162px;
+  align-items: center;
+  width: calc(100% - 2 * 162px);
   background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .logo{
@@ -60,6 +66,7 @@
 .nav__item_a{
   color: #232134;
   font-weight: 400;
+  font-family: Inter;
 }
 
 .nav__item_a.active{
