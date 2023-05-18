@@ -72,6 +72,9 @@
 }
 
 .star__active{
+  position: absolute;
+  top: 24px; right: 24px;
+  cursor: pointer;
   fill: #5E96FC;
   stroke: #5E96FC;
   stroke-width: 30px;

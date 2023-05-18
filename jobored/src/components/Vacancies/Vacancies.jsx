@@ -139,6 +139,7 @@ function Vacancies({vacancies}) {
         vacancies.map((vacancy) =>
           <VacancyItem
             key = {vacancy.id}
+            id = {vacancy.id}
             name = {vacancy.profession}
             salaryFrom = {vacancy.payment_from}
             salaryTo = {vacancy.payment_to}

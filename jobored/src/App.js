@@ -20,9 +20,6 @@ function App() {
 
   })
 
-  console.log(vacancies)
-
-
   useEffect(() => {
     fetchVacancies();
   }, [])
@@ -30,9 +27,11 @@ function App() {
 
 
   return (
-    <div className="main__app">
-      <Header/>
-      <Vacancies vacancies={vacancies}/>
+    <div className="App">
+      <div className="main__app">
+        <Header/>
+        <Vacancies vacancies={vacancies}/>
+      </div>
     </div>
   );
 }
