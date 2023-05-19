@@ -10,5 +10,5 @@ export const removeStoragedItem = (item) => {
 }
 
 export const getStoragedItems = () => {
-  return JSON.parse(localStorage.getItem('favorites'))
+  return localStorage.getItem('favorites') ? JSON.parse(localStorage.getItem('favorites')) : [];
 }

@@ -65,17 +65,21 @@
 }
 
 .star{
-  position: absolute;
-  top: 24px; right: 24px;
-  cursor: pointer;
   stroke: "#ACADB9";
 }
 
 .star__active{
-  position: absolute;
-  top: 24px; right: 24px;
-  cursor: pointer;
   fill: #5E96FC;
   stroke: #5E96FC;
   stroke-width: 30px;
+}
+
+.favorite__button{
+  position: absolute;
+  top: 24px; right: 24px;
+  cursor: pointer;
+  background-color: #00000000;
+  border: 0;
+  width: fit-content;
+  height: fit-content;
 }

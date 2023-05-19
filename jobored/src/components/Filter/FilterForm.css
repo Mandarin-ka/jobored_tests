@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+
+.filter__form{
+  padding: 20px;
+  background-color: #fff;
+  max-width: 315px;
+  border-radius: 12px;
+  border: 1px solid #EAEBED;
+  grid-area: filter;
+  box-sizing: border-box;
+  max-height: 358px;
+}
+
+.form__header{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 22px;
+}
+
+.form__name{
+  font-size: 20px;
+  font-weight: 700;
+  font-family: Inter;
+  color: #232134;
+}
+
+.clear{
+  position: relative;
+  color: #ACADB9;
+  font-weight: 500;
+  font-family: Inter;
+  font-size: 14px;
+  margin-right: 17px;
+  height: fit-content;
+  cursor: pointer;
+}
+
+.clear::before,
+.clear::after{
+  content: '';
+  width: 10px;
+  height: 1.3px;
+  background-color: #ACADB9;
+  position: absolute;
+  right: -17px;
+  top: 10px;
+}
+
+.clear::before{
+  transform: rotate(45deg);
+}
+
+.clear::after{
+  transform: rotate(-45deg);
+}
+
+.clear:hover{
+  text-decoration: underline;
+}
+
+.filter__option{
+  margin: 20px 0;
+}
+
+.option__name{
+  font-size: 16px;
+  font-weight: 700;
+  font-family: Inter;
+  color: #232134;
+}
+
+.button__apply{
+  width: 100%;
+  padding: 9.5px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  border: 0;
+  background-color: #5E96FC;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: Inter;
+  line-height: 21px;
+  font-weight: 500;
+  margin-top: 20px;
+}
