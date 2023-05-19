@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import './FilterForm.css';
 import Select from '../UI/Select/Select';
 import InputNumber from '../UI/Input/InputNumber';
+import cl from './FilterForm.module.css'
 
 const FilterForm = () => {
   const [salaryFrom, setSalaryFrom] = useState(0);
@@ -15,23 +15,23 @@ const FilterForm = () => {
   }
 
   return (
-    <form action="" className='filter__form'>
-      <div className="form__header">
-        <h2 className="form__name">Фильтры</h2>
-        <span className="clear" onClick={reset}>Сбросить все</span>
+    <form action="" className={cl.filter__form}>
+      <div className={cl.form__header}>
+        <h2 className={cl.form__name}>Фильтры</h2>
+        <span className={cl.clear} onClick={reset}>Сбросить все</span>
       </div>
 
-      <div className="filter__option">
-        <h3 className="option__name">Отрасль</h3>
+      <div className={cl.filter__option}>
+        <h3 className={cl.option__name}>Отрасль</h3>
         <Select option={option} setOption={setOption}/>
       </div>
-      <div className="filter__option">
-        <h3 className="option__name">Оклад</h3>
+      <div className={cl.filter__option}>
+        <h3 className={cl.option__name}>Оклад</h3>
         <InputNumber placeholder='От' value={salaryFrom} setValue={setSalaryFrom}/>
         <InputNumber placeholder='До' value={salaryTo} setValue={setSalaryTo}/>
       </div>
 
-      <button className="button__apply">Применить</button>
+      <button className={cl.button__apply}>Применить</button>
     </form>
    );
 }

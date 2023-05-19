@@ -4,7 +4,6 @@
 
 .input{
   width: 100%;
-  margin: 8px 0 0;
   padding: 10px 12px;
   box-sizing: border-box;
   border-radius: 8px;
@@ -15,6 +14,7 @@
   font-size: 14px;
   line-height: 20px;
   position: relative;
+  margin: 4px 0;
 }
 
 .salary__input::placeholder{
@@ -38,7 +38,7 @@ input[type="number"]::-webkit-inner-spin-button {
   height: fit-content;
   position: absolute;
   right: 12px;
-  top: 12px;
+  top: 8px;
 }
 
 .step__button:hover{
@@ -55,5 +55,5 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .step__button:last-child{
   transform: rotate(180deg);
-  top: 32px;
+  top: 28px;
 }

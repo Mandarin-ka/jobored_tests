@@ -6,8 +6,6 @@ import { useEffect } from 'react';
 import cl from './Select.module.css'
 
 function Select({option, setOption}) {
-  const [disabled, setDisabled] = useState(true);
-  const defaultValue = 'Выберите вакансию';
   const [catalogues, setCatalogues] = useState([]);
 
   const [fetchCatalogues] = useFetching(async () => {
@@ -21,11 +19,10 @@ function Select({option, setOption}) {
 
   return (
     <div className={cl.select__block}>
-      <select className={disabled ? cl.select + ' ' + cl.select_disabled : cl.select} onChange={(e) => {
+      <select className={!option ? cl.select + ' ' + cl.select_disabled : cl.select} value={option} onChange={(e) => {
         setOption(+e.target.value)
-        e.target.value !== defaultValue ? setDisabled(false) : setDisabled(true);
       }}>
-        <option value={option} className={cl.option_default}>{defaultValue}</option>
+        <option value={0} className={cl.option_default}>Выберите отрасль</option>
         {catalogues.map((catalogue) =>
           <option key={catalogue.key} value={catalogue.key} className={cl.option}>{catalogue.title_trimmed}</option>
         )}

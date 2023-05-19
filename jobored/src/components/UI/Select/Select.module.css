@@ -23,6 +23,8 @@
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  cursor: pointer;
+  font-family: Inter;
 }
 
 .select_disabled{
