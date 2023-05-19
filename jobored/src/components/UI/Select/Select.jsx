@@ -15,11 +15,11 @@ function Select({option, setOption}) {
 
   useEffect(() => {
     fetchCatalogues();
-  },[])
+  },[fetchCatalogues])
 
   return (
     <div className={cl.select__block}>
-      <select className={!option ? cl.select + ' ' + cl.select_disabled : cl.select} value={option} onChange={(e) => {
+      <select data-elem='industry-select' className={!option ? cl.select + ' ' + cl.select_disabled : cl.select} value={option} onChange={(e) => {
         setOption(+e.target.value)
       }}>
         <option value={0} className={cl.option_default}>Выберите отрасль</option>

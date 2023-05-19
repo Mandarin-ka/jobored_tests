@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import cl from './InputNumber.module.css'
 
 
-function InputNumber({placeholder, value, setValue}) {
+function InputNumber({placeholder, value, setValue, dataAttribute}) {
 
   const increaseSalary = (e) => {
     e.preventDefault();
@@ -18,6 +18,7 @@ function InputNumber({placeholder, value, setValue}) {
   return (
     <div className={cl.salary}>
       <input
+        data-elem={dataAttribute}
         className={cl.input}
         type="number"
         value={value ? value : ''}
