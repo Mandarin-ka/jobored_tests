@@ -7,6 +7,7 @@ import Search from './components/Filter/Search';
 import Header from './components/Header/Header';
 import { useFetching } from './components/hooks/useFetching';
 import Loader from './components/UI/Loader/Loader';
+import Pagination from './components/UI/Pagination/Pagination';
 import Vacancies from './components/Vacancies/Vacancies';
 import './styles/Main.css'
 
@@ -35,6 +36,7 @@ function App() {
         <Search requestData={requestData} setRequestData={setRequestData}/>
         <FilterForm request={requestData} setRequest={setRequestData}/>
         {isVacanciesLoading ? <Loader/> : <Vacancies vacancies={vacancies}/>}
+        <Pagination totalVacancies={totalVacancies} requestData={requestData} setRequest={setRequestData}/>
       </div>
     </div>
   );

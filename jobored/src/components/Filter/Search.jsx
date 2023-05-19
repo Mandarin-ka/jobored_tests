@@ -13,7 +13,7 @@ function Search({requestData, setRequestData}) {
       <input data-elem='search-input' type="text" placeholder='Введите название вакансии' value={value} className={cl.search__input} maxLength={75} onChange={(e) => setValue(e.target.value)}/>
       <button data-elem='search-button' className={cl.search__button} onClick={(e) => {
         e.preventDefault();
-        setRequestData({...requestData, keyword: value})
+        setRequestData({...requestData, keyword: value, page: 0})
       }}>Поиск</button>
     </form>
    );

@@ -12,12 +12,12 @@ const FilterForm = ({request, setRequest}) => {
     setSalaryFrom(0);
     setSalaryTo(null);
     setOption(0);
-    setRequest({...request, paymentFrom: 0, paymentTo: null, catalogues: 0, noAgreement: null})
+    setRequest({...request, paymentFrom: 0, paymentTo: null, page: 0, catalogues: 0, noAgreement: null})
   }
 
   const apply = (e) => {
     e.preventDefault();
-    setRequest({...request, paymentFrom: salaryFrom, paymentTo: salaryTo, catalogues: option, noAgreement: (salaryFrom || salaryTo ? 1 : 0)})
+    setRequest({...request, paymentFrom: salaryFrom, paymentTo: salaryTo, catalogues: option, page: 0, noAgreement: (salaryFrom || salaryTo ? 1 : 0)})
   }
 
   return (

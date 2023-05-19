@@ -24,6 +24,9 @@ const Vacancy = ({id, name, salaryFrom, salaryTo, currency, time, location}) => 
           {salaryFrom && salaryTo
             ? `з/п ${salaryFrom} - ${salaryTo} ${currency}`
 
+            : (salaryFrom && salaryTo) && (salaryFrom === salaryTo)
+            ? `з/п ${salaryFrom} ${currency}`
+
             : salaryFrom && !salaryTo
             ? `з/п от ${salaryFrom} ${currency}`
 
