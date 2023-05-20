@@ -30,7 +30,6 @@ const Dropdown = ({option, setOption}) => {
     fetchCatalogues();
   },[fetchCatalogues])
 
-  console.log(catalogues)
 
   return (
     <div className={cl.dropdown}>

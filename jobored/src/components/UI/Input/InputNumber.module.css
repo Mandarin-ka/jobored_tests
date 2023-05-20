@@ -17,6 +17,10 @@
   margin: 4px 0;
 }
 
+.input:focus{
+  border: 1px solid #5E96FC;
+}
+
 .salary__input::placeholder{
   color: #ACADB9;
 }
