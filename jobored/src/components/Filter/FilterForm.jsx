@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Select from '../UI/Select/Select';
+import Dropdown from '../UI/DropDown/Dropdown';
 import InputNumber from '../UI/Input/InputNumber';
 import cl from './FilterForm.module.css'
 
@@ -17,7 +17,7 @@ const FilterForm = ({request, setRequest}) => {
 
   const apply = (e) => {
     e.preventDefault();
-    setRequest({...request, paymentFrom: salaryFrom, paymentTo: salaryTo, catalogues: option, page: 0, noAgreement: (salaryFrom || salaryTo ? 1 : 0)})
+    setRequest({...request, paymentFrom: salaryFrom, paymentTo: salaryTo, catalogues: option, page: 0, noAgreement: (salaryFrom || salaryTo ? 1 : null)})
   }
 
   return (
@@ -29,7 +29,7 @@ const FilterForm = ({request, setRequest}) => {
 
       <div className={cl.filter__option}>
         <h3 className={cl.option__name}>Отрасль</h3>
-        <Select option={option} setOption={setOption}/>
+        <Dropdown option={option} setOption={setOption}/>
       </div>
 
       <div className={cl.filter__option}>
