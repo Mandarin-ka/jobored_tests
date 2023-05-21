@@ -2,8 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import './Header.css'
 
-const Header = () => {
-  const [isMain, setIsMain] = useState(true);
+const Header = (isMain) => {
 
   return (
   <header id='header' className="header">

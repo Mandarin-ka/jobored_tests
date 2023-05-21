@@ -19,6 +19,7 @@
   text-align-last: left;
   width: fit-content;
   max-width: 600px;
+  cursor: pointer;
 }
 
 .vacancy__conditions{

@@ -12,14 +12,14 @@ a{
   background-color: #F6F7F8;
   min-height: 100vh;
   box-sizing: border-box;
-  padding: 0 30px;
+  padding: 124px 30px 0;
 }
 
 .main__app{
   background-color: #F6F7F8;
   max-width: 1100px;
   max-height: 660px;
-  margin: 100px auto;
+  margin: 0 auto;
   display: grid;
   grid-auto-columns: 1fr;
   grid-template-columns: 30% 69%;
@@ -29,4 +29,9 @@ a{
     "filter items"
     ". items"
     ". pagination"
+}
+
+.main__favorites{
+  max-width: 775px;
+  margin: auto;
 }
