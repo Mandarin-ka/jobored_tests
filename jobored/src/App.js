@@ -1,6 +1,4 @@
-import React from 'react';
-import { useEffect } from 'react';
-import { useState } from 'react';
+import React, {useState, useEffect} from 'react';
 import VacancyService from './components/API/VacancyService';
 import FilterForm from './components/Filter/FilterForm';
 import Search from './components/Filter/Search';
@@ -10,6 +8,7 @@ import Loader from './components/UI/Loader/Loader';
 import Pagination from './components/UI/Pagination/Pagination';
 import Vacancies from './components/Vacancies/Vacancies';
 import './styles/Main.css'
+import balloon from'./img/balloon.png'
 
 
 function App() {

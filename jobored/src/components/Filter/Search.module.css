@@ -17,6 +17,10 @@
   outline: 0;
 }
 
+.search__input:focus{
+  border: 1px solid #5E96FC;
+}
+
 .search__input:active{
   outline: 0;
 }
@@ -51,4 +55,13 @@
   right: 12px;
   line-height: 21px;
   padding: 5.5px 20px;
+  transition: 0.07s;
+}
+
+.search__button:hover{
+  background-color: #92C1FF;
+}
+
+.search__button:active{
+  background-color: #3B7CD3;
 }

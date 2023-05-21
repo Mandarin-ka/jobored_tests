@@ -28,7 +28,7 @@ const Dropdown = ({option, setOption}) => {
 
   useEffect(() => {
     fetchCatalogues();
-  },[fetchCatalogues])
+  },[])
 
 
   return (

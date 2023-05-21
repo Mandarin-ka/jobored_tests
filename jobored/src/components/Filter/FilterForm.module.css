@@ -32,7 +32,9 @@
   font-size: 14px;
   margin-right: 17px;
   height: fit-content;
+  transition: 0.07s;
   cursor: pointer;
+  transition: 0.07s;
 }
 
 .clear::before,
@@ -43,7 +45,16 @@
   background-color: #ACADB9;
   position: absolute;
   right: -17px;
-  top: 10px;
+  top: 9px;
+}
+
+.clear:hover{
+  color: #92C1FF;
+}
+
+.clear:hover::after,
+.clear:hover::before{
+  background-color: #92C1FF;
 }
 
 .clear::before{
@@ -52,10 +63,6 @@
 
 .clear::after{
   transform: rotate(-45deg);
-}
-
-.clear:hover{
-  text-decoration: underline;
 }
 
 .filter__option{
@@ -86,4 +93,12 @@
   line-height: 21px;
   font-weight: 500;
   margin-top: 20px;
+}
+
+.button__apply:hover{
+  background-color: #92C1FF;
+}
+
+.button__apply:active{
+  background-color: #3B7CD3;
 }

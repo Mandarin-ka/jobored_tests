@@ -51,6 +51,14 @@
   right: 13px;
 }
 
+.dropdown__button.opened::after{
+  transform: rotate(225deg);
+}
+
+.dropdown__button.opened::before{
+  transform: rotate(135deg);
+}
+
 .dropdown__content{
   position: absolute;
   top: 110%;
@@ -73,7 +81,6 @@
 .dropdown__content::-webkit-scrollbar-thumb{
   background-color: #ACADB9;
   border-radius: 5px;
-  margin-right: 15px;
 }
 
 .dropdown__content::-webkit-scrollbar-track{

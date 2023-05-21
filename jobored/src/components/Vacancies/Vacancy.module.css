@@ -65,7 +65,12 @@
 }
 
 .star{
-  stroke: "#ACADB9";
+  stroke: #ACADB9;
+  transition: 0.07s;
+}
+
+.star:hover{
+  stroke: #5E96FC;
 }
 
 .star__active{
