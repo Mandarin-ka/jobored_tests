@@ -1,0 +1,63 @@
+.salary{
+  position: relative;
+}
+
+.input{
+  width: 100%;
+  padding: 10px 12px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  border: 1px solid #D5D6DC;
+  outline: 0;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  position: relative;
+  margin: 4px 0;
+}
+
+.input:focus{
+  border: 1px solid #5E96FC;
+}
+
+.salary__input::placeholder{
+  color: #ACADB9;
+}
+
+input[type="number"] {
+	-moz-appearance: textfield;
+	-webkit-appearance: textfield;
+	appearance: textfield;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+	display: none;
+}
+
+.step__button{
+  border: 0;
+  background-color: #ffffff00;
+  height: fit-content;
+  position: absolute;
+  right: 12px;
+  top: 8px;
+}
+
+.step__button:hover{
+  cursor: pointer;
+}
+
+.step__icon{
+  stroke: #ACADB9;
+}
+
+.step__icon:hover{
+  stroke: black;
+}
+
+.step__button:last-child{
+  transform: rotate(180deg);
+  top: 28px;
+}

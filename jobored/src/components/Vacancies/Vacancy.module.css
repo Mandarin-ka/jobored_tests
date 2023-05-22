@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+.vacancy__item{
+  border: 1px solid #EBECEE;
+  border-radius: 12px;
+  padding: 24px;
+  position: relative;
+  box-sizing: border-box;
+  margin: 8px auto;
+  background-color: #FFFFFF;
+  width: 100%;
+  cursor: pointer;
+}
+
+.vacancy__name{
+  font-size: 20px;
+  font-family: Inter;
+  font-weight: 600;
+  color: #5E96FC;
+  text-align-last: left;
+  width: fit-content;
+  max-width: 600px;
+}
+
+.vacancy__conditions{
+  display: flex;
+  margin-top: 12px;
+}
+
+.conditions__time{
+  margin-left: 32px;
+  position: relative;
+  font-size: 16px;
+  font-family: Inter;
+}
+
+.conditions__time::before{
+  display: block;
+  content:'';
+  position: absolute;
+  left: -17px;
+  top: calc(50% - 2.5px);
+  bottom: 0;
+  right: 0;
+  background-color: #7B7C88;
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+}
+
+.conditions__salary{
+  color: #232134;
+  font-family: Inter;
+  font-weight: 600;
+  width: fit-content;
+}
+
+.vacancy__location{
+  margin-top: 12.5px;
+  display: flex;
+  align-items: center;
+}
+
+.location__text{
+  margin-left: 8px;
+}
+
+.star{
+  stroke: #ACADB9;
+  transition: 0.07s;
+}
+
+.star:hover{
+  stroke: #5E96FC;
+}
+
+.star__active{
+  fill: #5E96FC;
+  stroke: #5E96FC;
+  stroke-width: 30px;
+}
+
+.favorite__button{
+  position: absolute;
+  top: 24px; right: 24px;
+  cursor: pointer;
+  background-color: #00000000;
+  border: 0;
+  width: fit-content;
+  height: fit-content;
+}

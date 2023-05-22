@@ -1,0 +1,35 @@
+.page__wrapper{
+  margin: 20px auto;
+  width: fit-content;
+  display: flex;
+  grid-area: pagination;
+}
+
+.page{
+  padding: 8px;
+  line-height: 22.4px;
+  border: 1px solid #D5D6DC;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  margin: 0 4px;
+  border-radius: 4px;
+  font-family: Inter;
+  box-sizing: border-box;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+.page:disabled{
+  color: #D5D6DC;
+}
+
+.page__current{
+  border: 1px solid #5E96FC;
+  background-color: #5E96FC;
+  font-weight: bold;
+  color: white;
+}

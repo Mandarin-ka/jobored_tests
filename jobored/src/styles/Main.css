@@ -1,0 +1,37 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+}
+
+.App{
+  background-color: #F6F7F8;
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding: 124px 30px 54px;
+}
+
+.main__app{
+  background-color: #F6F7F8;
+  max-width: 1100px;
+  max-height: 660px;
+  margin: 0 auto;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 30% 69%;
+  gap: 0 28px;
+  grid-template-areas:
+    "filter search"
+    "filter items"
+    ". items"
+    ". pagination"
+}
+
+.main__favorites{
+  max-width: 775px;
+  margin: auto;
+}
