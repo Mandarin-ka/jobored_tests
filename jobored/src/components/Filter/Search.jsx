@@ -3,7 +3,6 @@ import cl from './Search.module.css'
 
 function Search({requestData, setRequestData}) {
   const [value, setValue] = useState('')
-  console.log(value)
 
   return (
     <form action="" className={cl.search__form}>

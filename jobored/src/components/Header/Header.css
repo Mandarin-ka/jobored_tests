@@ -13,6 +13,10 @@
   left: 0;
 }
 
+a{
+  text-decoration: none;
+}
+
 .logo{
   width: fit-content;
 }
@@ -67,6 +71,7 @@
   color: #232134;
   font-weight: 400;
   font-family: Inter;
+  font-size: 16px;
 }
 
 .nav__item_a.active{

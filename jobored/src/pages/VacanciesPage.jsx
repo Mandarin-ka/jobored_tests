@@ -28,13 +28,11 @@ function VacanciesPage() {
 
 
   return (
-    <div className="App">
-      <div className="main__app">
-        <Search requestData={requestData} setRequestData={setRequestData}/>
-        <FilterForm request={requestData} setRequest={setRequestData}/>
-        {isVacanciesLoading ? <Loader/> : <Vacancies vacancies={vacancies}/>}
-        <Pagination totalVacancies={totalVacancies} requestData={requestData} setRequest={setRequestData}/>
-      </div>
+    <div className="main__app">
+      <Search requestData={requestData} setRequestData={setRequestData}/>
+      <FilterForm request={requestData} setRequest={setRequestData}/>
+      {isVacanciesLoading ? <Loader/> : <Vacancies vacancies={vacancies}/>}
+      <Pagination totalVacancies={totalVacancies} requestData={requestData} setRequest={setRequestData}/>
     </div>
   );
 }

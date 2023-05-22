@@ -1,0 +1,30 @@
+.description{
+  max-width: 773px;
+  margin: 12px auto 0;
+  padding: 24px;
+  background-color: #fff;
+  box-sizing: border-box;
+  border-radius: 12px;
+  border: 1px solid #EAEBED;
+}
+
+.description *{
+  font-family: Inter;
+}
+
+.description ul{
+  margin: 16px 0;
+}
+
+.description p{
+  margin-bottom: 16px;
+}
+
+.description b{
+  color: #232134;
+  font-size: 20px;
+}
+
+.description li{
+  margin-left: 24px;
+}

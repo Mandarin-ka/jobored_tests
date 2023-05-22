@@ -9,6 +9,7 @@
   margin: 8px auto;
   background-color: #FFFFFF;
   width: 100%;
+  cursor: pointer;
 }
 
 .vacancy__name{
@@ -19,7 +20,6 @@
   text-align-last: left;
   width: fit-content;
   max-width: 600px;
-  cursor: pointer;
 }
 
 .vacancy__conditions{

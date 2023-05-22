@@ -4,7 +4,6 @@ import cl from './Pagination.module.css'
 
 function Pagination({totalVacancies, requestData, setRequest}) {
   const pagesArray = getPagesArray(requestData.page, totalVacancies);
-  console.log(pagesArray, requestData.page)
   return (
     <div className={cl.page__wrapper}>
       <button
@@ -24,7 +23,7 @@ function Pagination({totalVacancies, requestData, setRequest}) {
       )}
       <button
         onClick={() => setRequest({...requestData, page: requestData.page+1})}
-        disabled={requestData.page === Math.ceil(totalVacancies/4) || !totalVacancies}
+        disabled={requestData.page+1 === Math.ceil(totalVacancies/4) || !totalVacancies}
         className={cl.page}
         >&gt;</button>
     </div>

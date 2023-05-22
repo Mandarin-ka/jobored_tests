@@ -1,5 +1,6 @@
 .vacancy__items{
   width: 100%;
+  max-width: 773px;
   margin: auto;
   grid-area: items;
   height: 100%;

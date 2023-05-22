@@ -1,8 +1,9 @@
 import axios from 'axios'
 
+
 export default class VacancyService{
   static async getVacancies({published = 1 , keyword, paymentFrom, paymentTo,  noAgreement, catalogues, count = 4, page = 0, ids}){
-    const response = await axios.get('https://startup-summer-proxy-production.up.railway.app/2.0/vacancies', {
+    const response = await axios.get('https://startup-summer-2023-proxy.onrender.com/2.0/vacancies', {
       headers : {
         'X-Api-App-Id': 'v3.r.137440105.ffdbab114f92b821eac4e21f485343924a773131.06c3bdbb8446aeb91c35b80c42ff69eb9c457948',
         'x-secret-key': 'GEU4nvd3rej*jeh.eqp',
@@ -16,7 +17,7 @@ export default class VacancyService{
         count: count,
         page: page,
         no_agreement: noAgreement,
-        ids: ids
+        ids: ids,
       }
     })
 
@@ -24,7 +25,25 @@ export default class VacancyService{
   }
 
   static async getCatalogues(){
-    const response = axios.get('https://startup-summer-2023-proxy.onrender.com/2.0/catalogues', {
+    const response = await axios.get('https://startup-summer-2023-proxy.onrender.com/2.0/catalogues', {
+      headers: {
+        'x-secret-key': 'GEU4nvd3rej*jeh.eqp',
+        'X-Api-App-Id': 'v3.r.137440105.ffdbab114f92b821eac4e21f485343924a773131.06c3bdbb8446aeb91c35b80c42ff69eb9c457948',
+      }
+    })
+
+    return response;
+  }
+
+  static async getToken(){
+    const response = await axios.get('https://startup-summer-2023-proxy.onrender.com/2.0/oauth2/password', {
+      params:{
+        login: `sergei.stralenia@gmail.com`,
+        password: `paralect123`,
+        client_id: 2356,
+        client_secret: `v3.r.137440105.ffdbab114f92b821eac4e21f485343924a773131.06c3bdbb8446aeb91c35b80c42ff69eb9c457948`,
+        hr: 0,
+      },
       headers: {
         'X-Api-App-Id': 'v3.r.137440105.ffdbab114f92b821eac4e21f485343924a773131.06c3bdbb8446aeb91c35b80c42ff69eb9c457948',
         'x-secret-key': 'GEU4nvd3rej*jeh.eqp',
@@ -33,4 +52,5 @@ export default class VacancyService{
 
     return response;
   }
+
 }

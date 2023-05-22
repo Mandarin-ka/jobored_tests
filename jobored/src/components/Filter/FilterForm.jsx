@@ -11,8 +11,8 @@ const FilterForm = ({request, setRequest}) => {
   const reset = () => {
     setSalaryFrom(0);
     setSalaryTo(null);
-    setOption(0);
-    setRequest({...request, paymentFrom: 0, paymentTo: null, page: 0, catalogues: 0, noAgreement: null})
+    setOption(null);
+    setRequest({...request, paymentFrom: 0, paymentTo: null, page: 0, catalogues: null, noAgreement: null})
   }
 
   const apply = (e) => {
