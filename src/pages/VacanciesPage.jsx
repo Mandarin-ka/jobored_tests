@@ -12,7 +12,6 @@ import '../styles/Main.css'
 function VacanciesPage() {
   const [vacancies, setVacancies] = useState([]);
   const [totalVacancies, setTotalVacancies] = useState(0);
-  const [modal, setModal] = useState(false);
   const [requestData, setRequestData] = useState({keyword: '', page: 0, paymentFrom: null, paymentTo: null, noAgreement: null, catalogues: null});
 
 
