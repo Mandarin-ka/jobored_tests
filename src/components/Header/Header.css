@@ -20,6 +20,9 @@ a{
 
 .logo{
   width: fit-content;
+  position: absolute;
+  top: 24px;
+  left: 202px;
 }
 
 .logo__h{
@@ -90,5 +93,10 @@ a{
   .header__nav{
     margin-top: 10px;
   }
+}
 
+@media screen and (max-width: 1000px) {
+  .logo{
+    position: static;
+  }
 }

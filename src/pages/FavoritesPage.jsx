@@ -11,7 +11,7 @@ const FavoritesPage = () => {
   const [requestData, setRequestData] = useState({page: 0, ids: getStoragedItems()})
   const [favorites, setFavorites] = useState([]); //can i do it?
 
-  const [fetchFavorites, isFavoritesLoading, favoritesError] = useFetching(async ()=>{
+  const [fetchFavorites, isFavoritesLoading] = useFetching(async ()=>{
     if(requestData.ids.length){
       const response = await VacancyService.getVacancies(requestData)
       setFavorites(response.data.objects)

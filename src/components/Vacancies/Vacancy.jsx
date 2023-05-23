@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useState } from 'react';
 import cl from './Vacancy.module.css';
 import { getStoragedItems, removeStoragedItem, setStoragedItem } from '../utils/localStorageUtils';

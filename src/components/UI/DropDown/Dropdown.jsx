@@ -32,7 +32,7 @@ const Dropdown = ({option, setOption}) => {
 
 
   return (
-    <div className={cl.dropdown}>
+    <div className={cl.dropdown} data-elem='industry-select'>
       <div className={optionState()} onClick={() => {
         setIsActive(!isActive)
       }}>{option ? catalogues.find((catalogue) => catalogue.key === option).title_trimmed : 'Выберите отрасль'}</div>
