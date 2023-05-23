@@ -9,12 +9,13 @@
   grid-area: filter;
   box-sizing: border-box;
   max-height: 358px;
+  margin-right: 20px;
 }
 
 .form__header{
   display: flex;
   justify-content: space-between;
-  margin-bottom: 22px;
+  margin-bottom: 26px;
 }
 
 .form__name{
@@ -74,7 +75,6 @@
   font-weight: 700;
   font-family: Inter;
   color: #232134;
-  margin-bottom: 4px;
 }
 
 .button__apply{
@@ -105,6 +105,36 @@
 
 @media screen and (max-width: 1000px) {
   .filter__form{
-    display: none;
+    width: 100%;
+    margin: 15px 0;
+    max-width: none;
+  }
+
+  .filter__option{
+    margin: 10px 0;
+  }
+
+  .form__header{
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .form__name{
+    font-size: 17px;
+  }
+
+  .clear{
+    font-size: 13px;
+  }
+
+  .option__name{
+    font-size: 14px;
+  }
+
+  .button__apply{
+    margin-top: 10px;
+    padding: 7.5px;
+    font-size: 14px;
   }
 }

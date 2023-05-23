@@ -1,5 +1,5 @@
 .page__wrapper{
-  margin: 20px auto;
+  margin: 28px auto 0;
   width: fit-content;
   display: flex;
   grid-area: pagination;
