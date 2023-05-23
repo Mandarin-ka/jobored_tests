@@ -102,3 +102,9 @@
 .button__apply:active{
   background-color: #3B7CD3;
 }
+
+@media screen and (max-width: 1000px) {
+  .filter__form{
+    display: none;
+  }
+}

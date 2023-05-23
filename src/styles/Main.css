@@ -12,7 +12,7 @@ a{
   background-color: #F6F7F8;
   min-height: 100vh;
   box-sizing: border-box;
-  padding: 124px 30px 54px;
+  padding: 124px 30px 154px;
 }
 
 .main__app{
@@ -34,4 +34,16 @@ a{
 .main__favorites{
   max-width: 775px;
   margin: auto;
+}
+
+#root{
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 1000px) {
+  .main__app{
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+  }
 }

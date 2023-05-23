@@ -6,7 +6,8 @@
   height: 84px;
   padding: 0 162px;
   align-items: center;
-  width: calc(100% - 2 * 162px);
+  width: 100%;
+  box-sizing: border-box;
   background-color: white;
   position: absolute;
   top: 0;
@@ -56,9 +57,7 @@ a{
   align-items: center;
   display: flex;
   justify-content: space-between;
-  min-width: 275px;
-  max-width: 275px;
-  width: 100%;
+  width: 275px;
   margin: auto;
 }
 
@@ -76,4 +75,19 @@ a{
 
 .nav__item_a.active{
   color: #5E96FC;
+}
+
+@media screen and (max-width: 860px) {
+  .header{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+    height: none;
+  }
+
+  .header__nav{
+    margin-top: 10px;
+  }
+
 }

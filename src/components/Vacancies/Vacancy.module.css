@@ -19,7 +19,7 @@
   color: #5E96FC;
   text-align-last: left;
   width: fit-content;
-  max-width: 600px;
+  max-width: 90%;
 }
 
 .vacancy__conditions{
@@ -88,4 +88,33 @@
   border: 0;
   width: fit-content;
   height: fit-content;
+}
+
+@media screen and (max-width: 660px) {
+  .vacancy__item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .conditions__time,
+  .conditions__salary,
+  .location__text,
+  .vacancy__name{
+    font-size: 1em;
+  }
+
+  .vacancy__conditions{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .conditions__time{
+    margin: 5px 0 0;
+  }
+
+  .conditions__time::before{
+    display: none;
+  }
 }
