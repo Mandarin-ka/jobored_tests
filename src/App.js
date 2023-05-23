@@ -21,7 +21,6 @@ function App() {
 
 
   return (
-    <div className="App">
       <BrowserRouter>
         <Header/>
         <Routes>
@@ -30,7 +29,6 @@ function App() {
           <Route path = {`/vacancy/:id`} element = {<VacancyPage/>}/>
         </Routes>
       </BrowserRouter>
-    </div>
   );
 }
 
