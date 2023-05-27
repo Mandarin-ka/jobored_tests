@@ -3,7 +3,7 @@ import { useState } from 'react';
 import cl from './Vacancy.module.css';
 import { getStoragedItems, removeStoragedItem, setStoragedItem } from '../utils/localStorageUtils';
 import { Link } from 'react-router-dom';
-import imgLocation from './../img/location.svg'
+import imgLocation from './../img/location.svg';
 
 const Vacancy = ({id, name, salaryFrom, salaryTo, currency, time, location}) => {
   const [isFavorite, setIsFavorite] = useState(getStoragedItems().indexOf(id) > -1);
@@ -14,18 +14,18 @@ const Vacancy = ({id, name, salaryFrom, salaryTo, currency, time, location}) => 
       setIsFavorite(false);
       removeStoragedItem(id);
     } else{
-      setIsFavorite(true)
+      setIsFavorite(true);
       setStoragedItem(id);
     }
-  }
+  };
 
   const getSalaryText = (salaryFrom, salaryTo) =>{
     if((salaryFrom && salaryTo) && (salaryFrom === salaryTo)) return `з/п ${salaryFrom} ${currency}`;
     else if(salaryFrom && salaryTo) return `з/п ${salaryFrom} - ${salaryTo} ${currency}`;
     else if(salaryFrom && !salaryTo) return `з/п от ${salaryFrom} ${currency}`;
     else if(!salaryFrom && salaryTo) return `з/п до ${salaryTo} ${currency}`;
-    else return `По договорённости`;
-  }
+    else return 'По договорённости';
+  };
 
 
   return (
@@ -47,7 +47,7 @@ const Vacancy = ({id, name, salaryFrom, salaryTo, currency, time, location}) => 
         </svg>
       </button>
     </Link>
-   );
-}
+  );
+};
 
 export default Vacancy;

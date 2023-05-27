@@ -21,7 +21,6 @@ const FavoritesPage = () => {
   useEffect(()=>{
     fetchFavorites();
   },[requestData])
-
   return (
     <div className="main__favorites">
       {isFavoritesLoading ? <Loader/> : <Vacancies vacancies={favorites}/>}

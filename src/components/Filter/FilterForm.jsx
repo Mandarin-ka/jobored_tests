@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Dropdown from '../UI/DropDown/Dropdown';
 import InputNumber from '../UI/Input/InputNumber';
-import cl from './FilterForm.module.css'
+import cl from './FilterForm.module.css';
 
 const FilterForm = ({request, setRequest}) => {
   const [salaryFrom, setSalaryFrom] = useState(0);
@@ -13,12 +13,12 @@ const FilterForm = ({request, setRequest}) => {
     setSalaryTo(null);
     setOption(null);
     setRequest({...request, paymentFrom: 0, paymentTo: null, page: 0, catalogues: null, noAgreement: null})
-  }
+  };
 
   const apply = (e) => {
     e.preventDefault();
     setRequest({...request, paymentFrom: salaryFrom, paymentTo: salaryTo, catalogues: option, page: 0, noAgreement: (salaryFrom || salaryTo ? 1 : null)})
-  }
+  };
 
   return (
     <form action="" className={cl.filter__form}>
@@ -40,7 +40,7 @@ const FilterForm = ({request, setRequest}) => {
 
       <button data-elem='search-button' className={cl.button__apply} onClick={apply}>Применить</button>
     </form>
-   );
-}
+  );
+};
 
 export default FilterForm;

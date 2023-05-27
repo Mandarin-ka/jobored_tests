@@ -1,7 +1,7 @@
 import React from 'react';
 import VacancyItem from './Vacancy';
-import cl from './Vacancies.module.css'
-import img from './../img/notFound.svg'
+import cl from './Vacancies.module.css';
+import img from './../img/notFound.svg';
 
 
 function Vacancies({vacancies}) {
@@ -9,10 +9,10 @@ function Vacancies({vacancies}) {
     return (
       <div className={cl.error__block}>
         <img src={img} alt="not_found" className={cl.error__img}/>
-      <h2 className={cl.error__h}>Упс... Вакансий не найдено :(</h2>
+        <h2 className={cl.error__h}>Упс... Вакансий не найдено :(</h2>
       </div>
 
-    )
+    );
   }
 
   return (
@@ -28,12 +28,12 @@ function Vacancies({vacancies}) {
             currency = {vacancy.currency}
             location = {vacancy.town.title}
             time = {vacancy.type_of_work.title} />
-          )
+        )
       }
 
 
     </div>
-   );
+  );
 }
 
 export default Vacancies;
