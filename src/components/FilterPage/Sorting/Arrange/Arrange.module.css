@@ -1,0 +1,44 @@
+.arrange {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 88px;
+  height: 44px;
+  padding: 1px;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+  position: relative;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.arrange__focus {
+  background-color: #fff;
+  border-radius: 4px;
+  position: absolute;
+  z-index: 0;
+  left: 0;
+  width: 42px;
+  height: 42px;
+  transition: 0.4s;
+}
+
+.arrange__focus.left {
+  left: 1px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.arrange__focus.right {
+  left: 44px;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.arrange__block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+  height: 42px;
+  z-index: 1;
+}

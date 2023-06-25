@@ -1,0 +1,19 @@
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 14px 9.375%;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logo__name {
+  font-size: 20px;
+  margin-left: 10px;
+}

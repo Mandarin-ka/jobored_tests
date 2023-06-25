@@ -1,18 +1,17 @@
-.loader{
-  min-width: 50px;
-  min-height: 50px;
-  max-width: 50px;
-  max-height: 50px;
-  border-radius: 50%;
-  border-top: 3px solid #5E96FC;
-  border-right: 3px solid #5E96FC;
-  animation: rotate 2s infinite linear;
-  margin: 290px auto;
+.loader {
+  min-width: 70px;
+  min-height: 70px;
+  max-width: 70px;
+  max-height: 70px;
+  border-radius: 80%;
+  margin: auto;
+  display: block;
+  animation: rotate 3s infinite cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
 @keyframes rotate {
   from {
-    transform: rotate(0deg);
+    transform: rotate(0);
   }
   to {
     transform: rotate(360deg);

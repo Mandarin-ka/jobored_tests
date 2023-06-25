@@ -1,0 +1,36 @@
+.header__counter {
+  width: 170px;
+  height: 32px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  align-items: center;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.counter__ui {
+  display: flex;
+}
+
+.counter__img {
+  margin: 0 10px 0 7px;
+}
+
+.counter__name {
+  color: #2f281e;
+  text-transform: uppercase;
+}
+
+.counter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  color: white;
+  background-color: #c73153;
+  max-height: 100%;
+  box-sizing: border-box;
+  border-radius: 0 5px 5px 0;
+}

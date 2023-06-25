@@ -1,0 +1,124 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 270px;
+  padding: 17px 10px;
+  box-sizing: border-box;
+  margin: auto;
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  transition: 0;
+}
+
+.card:hover {
+  background-color: #c73153;
+}
+
+.card__img {
+  width: 230px;
+  align-self: center;
+}
+
+.card__name {
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: 700;
+  color: #4f4f4f;
+  margin-top: 35px;
+}
+
+.card:hover .card__name {
+  color: white;
+}
+
+.card__price {
+  color: #333333;
+  font-size: 30px;
+  margin-top: 15px;
+}
+
+.card:hover .card__price {
+  color: white;
+}
+
+.card__play {
+  position: absolute;
+  border-radius: 50%;
+  border: 2px solid #c73153;
+  display: flex;
+  min-width: 30px;
+  max-height: 30px;
+  max-width: 30px;
+  min-height: 30px;
+  background-color: white;
+  right: 18px;
+  cursor: pointer;
+  bottom: 18px;
+}
+
+.card:hover .card__play {
+  border: 2px solid white;
+  background-color: #c73153;
+}
+
+.card__play::before {
+  content: "";
+  position: absolute;
+  top: 4.5px;
+  left: 10px;
+  margin: auto;
+  border: 8.5px solid transparent;
+  border-left: 8.5px solid #c73153;
+}
+
+.card:hover .card__play::before {
+  border-left: 8.5px solid white;
+}
+
+.card__add {
+  position: absolute;
+  width: 106px;
+  height: 30px;
+  border-radius: 5px 0 0 5px;
+  background-color: #c73153;
+  top: 30px;
+  right: 0;
+  color: white;
+  border: 0;
+  text-transform: uppercase;
+  text-align: right;
+  padding: 2px 7px;
+  font-size: 13px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.card__added {
+  background-color: gray;
+  position: absolute;
+  width: 116px;
+  height: 30px;
+  border-radius: 5px 0 0 5px;
+  top: 30px;
+  right: 0;
+  color: white;
+  border: 0;
+  text-transform: uppercase;
+  text-align: right;
+  padding: 2px 7px;
+  font-size: 13px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.add__text {
+  text-transform: uppercase;
+  font-size: 13px;
+}
